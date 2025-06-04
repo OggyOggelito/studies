@@ -44,7 +44,7 @@ def decide_move(boardIn, playerTurnIn):
                 score += board[opp_idx] + 2
         
         # final utility
-        return score
+        return score, player_store, opp_store, player_pits, opp_pits
         
     def valid_moves(board, player):
         offset = 0 if player == 1 else 7  # player 1 pits: 0–5, Player 2 pits: 7–12
