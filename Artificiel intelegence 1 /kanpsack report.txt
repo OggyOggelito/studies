@@ -1,0 +1,8 @@
+Lab 1 report
+
+Explanation of the code:
+
+In the code we begin with opening the txt file and read in the ID of b and w (benefit and weight),
+to then append those values to the fringe list "items". Which is an empty list in the beginning.
+
+

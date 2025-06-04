@@ -1,0 +1,176 @@
+Uppgift 1 – Lets stay single for a while....
+a)
+Skapa ett program som består av:
+• En mainfunktion som skriver ut ”Hello World” på skärmen 10 gånger
+b)
+Nu skall vi lugna ner programmet lite så det inte går så väldigt snabbt.
+Hur gör man detta??
+Det enklaste borde ju vara att skriva en loop som snurrar en stund utan att göra något....
+Men det känns som väldigt mycket CPU-arbete utan att något nyttigt görs. Tänk om vi
+kunde frysa processen istället, dvs sätta programmet i tillståndet ”Waiting” en viss tid
+innan vi släpper tillbaks den till ”Ready”.....
+I modulen time finns funktionen sleep() som gör just detta. Den fryser en tråd i det
+antal sekunder som parametern säger (notera att man kan kan ange t.ex. 0.5 för en halv
+sekund)
+Modifiera programmet så att det blir en sekunds paus mellan varje utskrift.
+c)
+Lägg till en funktion som heter myMoon() som skriver ut ”Hello Moon!” på skärmen
+var femtedels sekund i en oändlig loop.
+Först i mainfunktionen lägger ni nu till ett anrop till myMoon()
+Innan ni kör programmet, fundera på vad ni förväntar er för utdata.
+Kör programmet!
+Fick ni det förväntade beteendet? Om inte, vad hände igentligen?
+Varför skrevs inte ”Hello World” ut på skärmen?
+Spara koden från Uppgift 1 innan ni fortsätter med Uppgift 2 för
+redovisningen.
+
+Kod Uppgift 1:
+
+import time # Import time module
+
+def myMoon():
+    while 1 == 1:
+        
+        print("Hello Moon!")
+        time.sleep(1/5)
+def main(): # Main function
+    myMoon()
+    for i in range(1, 11): # for-statement to print "Hello World 10 times"
+        i = "Hello World"
+        print(i)
+        time.sleep(1) # Prints "Hello World with 1 second delay"
+
+
+if __name__ == "__main__":
+    main()
+
+Uppgift 2 – Single is boring, lets go multi instead..
+Man kan ju tänka sig att programmerarens önskan i Uppgift 1 skulle vara att både
+”Hello World!” och ”Hello Moon!” skulle skrivas ut.... Eftersom dessa två utskrifter har
+olika periodtid så blir det ganska krångligt att skriva programmet som en loop som
+sköter båda utskrifterna. Ett bättre sätt är ju då att skapa en multitrådad applikation.
+I Python implementeras trådar i modulen threading och objektet vi skall använda heter
+kort och gott Thread. Läs på lite kring objektet Thread (finns massor på nätet).
+Titta lite extra på parametrarna target och deamon, samt metoden start.
+Tips: När ni tittar på parametrarna på konstruktorn så kan det se lite komplext och
+mastigt ut. I denna uppgift behöver ni bara använda target och deamon. Det finns ett
+klurigt sätt att hoppa över parametrar i Python genom att istället för att lista alla
+parametrar, namnge de man vill ha med. Om du t.ex. har funktionen add(tal1, tal2) så
+kan du anropa den med add(2,3) ELLER add(tal1=2, tal2=3).
+a)
+Ändra i er main-funktion så att myMoon()startas i en egen tråd istället för det
+funktionsanrop till den som ni implementerade i Uppgift 1. För att emulera
+operativsystemets trådar så måste ni sätta daemon=True.
+Innan ni kör programmet, fundera på vad ni förväntar er för utdata.
+OBSERVERA: Vissa miljöer, t.ex. Spyder kommer att ge fel beteende för just denna
+dellaboration. För att se till att programmet beter sig korrekt så bör ni starta denna i
+terminaläge. Skapa ett terminalfönster, ta er till rätt katalog och kör programmet med
+”python filnamn.py” alternativt ”python3 filnamn.py”.
+Kör programmet i minst 10 sekunder!
+Fick ni det förväntade beteendet? Om inte, vad hände igentligen?
+Varför terminerade plötsligt processen?
+(Om processen inte terminerade, se observationen ovan)
+
+svar: Processen termineras efter 10 sekunder eftersom att myMoon är en "sub-thread" till main-thread
+och vi har satt main-thread på att sluta skriva ut "Hello World" efter 10 sekunder
+(10 utskrifter med 1 sekunds intervall)
+
+b)
+Så i princip har vi bara ”anropat funktionen” lite annorlunda så att den börjar exekvera
+parallellt med den anropande main-tråden. Men vi saknar fortfarande möjligheten att
+skicka med parametrar till tråden.
+Modifiera myMoon() så att den tar en sträng som inparameter och istället för ”Hello
+Moon!” skriver ut den strängen.
+Modifiera main funktionen så att den först låter användaren mata in en sträng.
+Utöka sedan trådanropet så att strängen skickas från main till tråden när den skapas.
+Spara koden från Uppgift 2 innan ni fortsätter med Uppgift 3 för
+redovisningen.
+
+Kod Uppgift 2:
+
+import time # Import time module
+import threading # Import threading module
+
+def myMoon(user_input):
+    while True:
+        
+        print(user_input)
+        time.sleep(1/5)
+
+if __name__ == "__main__":
+    user_input = input("Enter string input: ")
+    x = threading.Thread(target=myMoon, args=(user_input,), daemon=True)
+    x.start()
+    for i in range(1, 11): # for-statement to print "Hello World 10 times"
+        i = "Hello World"
+        print(i)
+        time.sleep(1) # Prints "Hello World with 1 second delay
+        
+
+Uppgift 3: You got this sync’in feeling....
+Dags att synkronisera de två trådarna.
+a)
+Modifiera programmet så att ”Hello World!” skrivs ut 10 gånger (från main-tråden) och
+myMoon() skriver sin text 10 gånger. Dessa utskrifter ska sedan fortsätta att skrivas ut i
+klumpar om 10 rader som inte får blandas. Det får alltså inte finnas ställen där t.ex. 5
+hello world skrivs ut och sedan blir det 10 moon-texter.
+Innan ni kör programmet, fundera på vad ni förväntar er för utdata.
+Kör programmet i minst 10 sekunder!
+Scrolla tillbaks i utskrifterna.
+Fick ni det förväntade beteendet? Om inte, vad hände igentligen?
+Om ni fick det, kan ni verkligen garantera att det alltid blir klumpar om 10??
+b)
+Gissningsvis så använde ni antingen korta sleep anrop eller någon delad variabel för att
+uppnå synkroniseringen.
+Eller så har ni redan gått igenom föreläsningen kring processkommunikation och
+använt någon primitiv för att synkronisera trådar (typ Lock). I så fall är ni faktiskt klara
+nu.
+Har ni använt sleep så kan ni faktiskt inte garantera att det fungerar. Skulle någon
+annan tung process stjäla CPUn ett tag så vet ni inte i vilken ordning trådarna kommer
+att köras när båda är i readykön.
+Har ni använt en delad variabel (typ en int eller liknande) så är risken stor att den är
+felimplementerad, alternativt att koden nu innehåller loopar som väntar på trådens tur,
+så kallad busy waiting.
+Precis som att ni använde sleep för att frysa trådar så kan man också använda Lock som
+också finns i modulen threading för att frysa trådar som väntar på någon annan tråd.
+Lock kan låsas och låsas upp och det är bara en tråd i taget som kan låsa. Försöker man
+låsa ett redan låst lås så fryser tråden tills låset blir upplåst igen.
+Modifiera programmet så att det använder Lock istället!!
+Bra jobbat. Dags att redovisa labben!!!
+Glöm inte att skicka in koden när ni är godkända samt klaga hos labassen
+för de urusla ordvitsarna i labspecen!!!
+
+
+
+
+KOD:
+
+import time # Import time module
+import threading # Import threading module
+lock = threading.Lock()
+turn = "moon" #set turn to moon to start with myMoon function
+
+def myMoon(user_input): # myMoon is a copied function of main
+    global turn # global turn to check which turn 
+    while True:
+        with lock: # lock the function
+            if turn == "moon": #check if turn is moon
+                for _ in range(10): # print 10 times
+                    print(user_input)
+                    time.sleep(1) 
+                turn = "main" #switch turn to main
+
+if __name__ == "__main__":
+    # main doesn't need global turn cause it is the main function
+    user_input = input("Enter string input: ") # start with user input
+    x = threading.Thread(target=myMoon, args=(user_input,), daemon=True) # thread target myMoon function
+    x.start() # start the threads
+    
+    while True:
+        with lock: # lock main from printing
+            if turn == "main": # if turn == main, then we print hello world
+                
+                for _ in range(10): #Prints hello world! 10 times
+                    print("Hello World!")
+                    time.sleep(1) # Prints "Hello World with 1 second delay
+                turn = "moon" # switch the turn to myMoon function

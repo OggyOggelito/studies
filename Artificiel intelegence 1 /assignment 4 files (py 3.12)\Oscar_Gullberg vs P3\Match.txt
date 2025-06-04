@@ -1,0 +1,916 @@
+000  Game 0
+
+002  Oscar_Gullberg 1 - 0 P3
+
+002  Oscar_Gullberg 2 - 0 P3
+
+002  Oscar_Gullberg 2 - 1 P3
+
+002  Oscar_Gullberg 2 - 2 P3
+
+002  Oscar_Gullberg 3 - 2 P3
+
+002  Oscar_Gullberg 3 - 3 P3
+
+002  Oscar_Gullberg 4 - 3 P3
+
+002  Oscar_Gullberg 4 - 4 P3
+
+002  Oscar_Gullberg 5 - 4 P3
+
+002  Oscar_Gullberg 6 - 4 P3
+
+002  Oscar_Gullberg 6 - 5 P3
+
+002  Oscar_Gullberg 7 - 5 P3
+
+002  Oscar_Gullberg 8 - 5 P3
+
+002  Oscar_Gullberg 9 - 5 P3
+
+002  Oscar_Gullberg 10 - 5 P3
+
+002  Oscar_Gullberg 11 - 5 P3
+
+002  Oscar_Gullberg 12 - 5 P3
+
+002  Oscar_Gullberg 12 - 6 P3
+
+002  Oscar_Gullberg 13 - 6 P3
+
+002  Oscar_Gullberg 14 - 6 P3
+
+002  Oscar_Gullberg 14 - 7 P3
+
+002  Oscar_Gullberg 15 - 7 P3
+
+002  Oscar_Gullberg 15 - 7 P3
+
+002  Oscar_Gullberg 15 - 8 P3
+
+002  Oscar_Gullberg 16 - 8 P3
+
+002  Oscar_Gullberg 17 - 8 P3
+
+002  Oscar_Gullberg 17 - 10 P3
+
+002  Oscar_Gullberg 18 - 10 P3
+
+002  Oscar_Gullberg 21 - 10 P3
+
+002  Oscar_Gullberg 21 - 11 P3
+
+002  Oscar_Gullberg 21 - 12 P3
+
+002  Oscar_Gullberg 22 - 12 P3
+
+002  Oscar_Gullberg 22 - 12 P3
+
+002  Oscar_Gullberg 22 - 12 P3
+
+002  Oscar_Gullberg 22 - 13 P3
+
+002  Oscar_Gullberg 22 - 13 P3
+
+002  Oscar_Gullberg 22 - 13 P3
+
+002  Oscar_Gullberg 22 - 13 P3
+
+002  Oscar_Gullberg 22 - 13 P3
+
+002  Oscar_Gullberg 22 - 13 P3
+
+002  Oscar_Gullberg 22 - 13 P3
+
+002  Oscar_Gullberg 22 - 14 P3
+
+002  Oscar_Gullberg 23 - 14 P3
+
+002  Oscar_Gullberg 23 - 16 P3
+
+002  Oscar_Gullberg 24 - 16 P3
+
+002  Oscar_Gullberg 24 - 16 P3
+
+002  Oscar_Gullberg 24 - 16 P3
+
+002  Oscar_Gullberg 25 - 16 P3
+
+002  Oscar_Gullberg 31 - 17 P3
+
+000  Game 1
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 1 - 1 Oscar_Gullberg
+
+002  P3 1 - 1 Oscar_Gullberg
+
+002  P3 1 - 2 Oscar_Gullberg
+
+002  P3 2 - 2 Oscar_Gullberg
+
+002  P3 6 - 2 Oscar_Gullberg
+
+002  P3 6 - 3 Oscar_Gullberg
+
+002  P3 8 - 3 Oscar_Gullberg
+
+002  P3 8 - 4 Oscar_Gullberg
+
+002  P3 9 - 4 Oscar_Gullberg
+
+002  P3 9 - 5 Oscar_Gullberg
+
+002  P3 9 - 6 Oscar_Gullberg
+
+002  P3 9 - 7 Oscar_Gullberg
+
+002  P3 9 - 12 Oscar_Gullberg
+
+002  P3 10 - 12 Oscar_Gullberg
+
+002  P3 10 - 13 Oscar_Gullberg
+
+002  P3 10 - 13 Oscar_Gullberg
+
+002  P3 10 - 14 Oscar_Gullberg
+
+002  P3 10 - 15 Oscar_Gullberg
+
+002  P3 10 - 16 Oscar_Gullberg
+
+002  P3 10 - 19 Oscar_Gullberg
+
+002  P3 10 - 19 Oscar_Gullberg
+
+002  P3 10 - 20 Oscar_Gullberg
+
+002  P3 10 - 20 Oscar_Gullberg
+
+002  P3 10 - 21 Oscar_Gullberg
+
+002  P3 10 - 22 Oscar_Gullberg
+
+002  P3 10 - 22 Oscar_Gullberg
+
+002  P3 10 - 23 Oscar_Gullberg
+
+002  P3 10 - 23 Oscar_Gullberg
+
+002  P3 10 - 24 Oscar_Gullberg
+
+002  P3 10 - 24 Oscar_Gullberg
+
+002  P3 23 - 25 Oscar_Gullberg
+
+000  Game 2
+
+002  Oscar_Gullberg 1 - 0 P3
+
+002  Oscar_Gullberg 2 - 0 P3
+
+002  Oscar_Gullberg 2 - 1 P3
+
+002  Oscar_Gullberg 2 - 1 P3
+
+002  Oscar_Gullberg 2 - 2 P3
+
+002  Oscar_Gullberg 3 - 2 P3
+
+002  Oscar_Gullberg 3 - 2 P3
+
+002  Oscar_Gullberg 3 - 2 P3
+
+002  Oscar_Gullberg 3 - 3 P3
+
+002  Oscar_Gullberg 4 - 3 P3
+
+002  Oscar_Gullberg 5 - 3 P3
+
+002  Oscar_Gullberg 5 - 4 P3
+
+002  Oscar_Gullberg 6 - 4 P3
+
+002  Oscar_Gullberg 7 - 4 P3
+
+002  Oscar_Gullberg 7 - 5 P3
+
+002  Oscar_Gullberg 8 - 5 P3
+
+002  Oscar_Gullberg 9 - 5 P3
+
+002  Oscar_Gullberg 10 - 5 P3
+
+002  Oscar_Gullberg 10 - 6 P3
+
+002  Oscar_Gullberg 11 - 6 P3
+
+002  Oscar_Gullberg 11 - 7 P3
+
+002  Oscar_Gullberg 12 - 7 P3
+
+002  Oscar_Gullberg 13 - 7 P3
+
+002  Oscar_Gullberg 13 - 8 P3
+
+002  Oscar_Gullberg 13 - 8 P3
+
+002  Oscar_Gullberg 14 - 8 P3
+
+002  Oscar_Gullberg 14 - 8 P3
+
+002  Oscar_Gullberg 14 - 9 P3
+
+002  Oscar_Gullberg 15 - 9 P3
+
+002  Oscar_Gullberg 16 - 9 P3
+
+002  Oscar_Gullberg 16 - 9 P3
+
+002  Oscar_Gullberg 16 - 10 P3
+
+002  Oscar_Gullberg 16 - 10 P3
+
+002  Oscar_Gullberg 16 - 10 P3
+
+002  Oscar_Gullberg 16 - 10 P3
+
+002  Oscar_Gullberg 16 - 10 P3
+
+002  Oscar_Gullberg 16 - 10 P3
+
+002  Oscar_Gullberg 17 - 10 P3
+
+002  Oscar_Gullberg 17 - 10 P3
+
+002  Oscar_Gullberg 18 - 10 P3
+
+002  Oscar_Gullberg 18 - 10 P3
+
+002  Oscar_Gullberg 19 - 10 P3
+
+002  Oscar_Gullberg 19 - 10 P3
+
+002  Oscar_Gullberg 19 - 10 P3
+
+002  Oscar_Gullberg 20 - 10 P3
+
+002  Oscar_Gullberg 21 - 27 P3
+
+000  Game 3
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 1 - 1 Oscar_Gullberg
+
+002  P3 1 - 1 Oscar_Gullberg
+
+002  P3 1 - 2 Oscar_Gullberg
+
+002  P3 1 - 2 Oscar_Gullberg
+
+002  P3 1 - 3 Oscar_Gullberg
+
+002  P3 2 - 3 Oscar_Gullberg
+
+002  P3 2 - 3 Oscar_Gullberg
+
+002  P3 3 - 3 Oscar_Gullberg
+
+002  P3 3 - 3 Oscar_Gullberg
+
+002  P3 4 - 3 Oscar_Gullberg
+
+002  P3 4 - 4 Oscar_Gullberg
+
+002  P3 5 - 4 Oscar_Gullberg
+
+002  P3 6 - 4 Oscar_Gullberg
+
+002  P3 6 - 5 Oscar_Gullberg
+
+002  P3 6 - 6 Oscar_Gullberg
+
+002  P3 7 - 6 Oscar_Gullberg
+
+002  P3 7 - 7 Oscar_Gullberg
+
+002  P3 7 - 8 Oscar_Gullberg
+
+002  P3 8 - 8 Oscar_Gullberg
+
+002  P3 8 - 8 Oscar_Gullberg
+
+002  P3 8 - 9 Oscar_Gullberg
+
+002  P3 8 - 10 Oscar_Gullberg
+
+002  P3 8 - 10 Oscar_Gullberg
+
+002  P3 8 - 11 Oscar_Gullberg
+
+002  P3 8 - 13 Oscar_Gullberg
+
+002  P3 9 - 13 Oscar_Gullberg
+
+002  P3 9 - 14 Oscar_Gullberg
+
+002  P3 10 - 14 Oscar_Gullberg
+
+002  P3 10 - 14 Oscar_Gullberg
+
+002  P3 10 - 14 Oscar_Gullberg
+
+002  P3 10 - 15 Oscar_Gullberg
+
+002  P3 10 - 16 Oscar_Gullberg
+
+002  P3 10 - 16 Oscar_Gullberg
+
+002  P3 11 - 16 Oscar_Gullberg
+
+002  P3 11 - 17 Oscar_Gullberg
+
+002  P3 11 - 18 Oscar_Gullberg
+
+002  P3 11 - 19 Oscar_Gullberg
+
+002  P3 11 - 20 Oscar_Gullberg
+
+002  P3 11 - 20 Oscar_Gullberg
+
+002  P3 11 - 20 Oscar_Gullberg
+
+002  P3 11 - 20 Oscar_Gullberg
+
+002  P3 11 - 21 Oscar_Gullberg
+
+002  P3 11 - 22 Oscar_Gullberg
+
+002  P3 11 - 23 Oscar_Gullberg
+
+002  P3 12 - 23 Oscar_Gullberg
+
+002  P3 15 - 23 Oscar_Gullberg
+
+002  P3 15 - 24 Oscar_Gullberg
+
+002  P3 15 - 24 Oscar_Gullberg
+
+002  P3 16 - 24 Oscar_Gullberg
+
+002  P3 19 - 24 Oscar_Gullberg
+
+002  P3 19 - 25 Oscar_Gullberg
+
+002  P3 20 - 25 Oscar_Gullberg
+
+002  P3 21 - 27 Oscar_Gullberg
+
+000  Game 4
+
+002  Oscar_Gullberg 1 - 0 P3
+
+002  Oscar_Gullberg 2 - 0 P3
+
+002  Oscar_Gullberg 2 - 1 P3
+
+002  Oscar_Gullberg 2 - 2 P3
+
+002  Oscar_Gullberg 3 - 2 P3
+
+002  Oscar_Gullberg 3 - 2 P3
+
+002  Oscar_Gullberg 3 - 3 P3
+
+002  Oscar_Gullberg 4 - 3 P3
+
+002  Oscar_Gullberg 4 - 4 P3
+
+002  Oscar_Gullberg 4 - 4 P3
+
+002  Oscar_Gullberg 4 - 4 P3
+
+002  Oscar_Gullberg 5 - 4 P3
+
+002  Oscar_Gullberg 5 - 5 P3
+
+002  Oscar_Gullberg 6 - 5 P3
+
+002  Oscar_Gullberg 7 - 5 P3
+
+002  Oscar_Gullberg 7 - 6 P3
+
+002  Oscar_Gullberg 7 - 7 P3
+
+002  Oscar_Gullberg 8 - 7 P3
+
+002  Oscar_Gullberg 9 - 7 P3
+
+002  Oscar_Gullberg 9 - 8 P3
+
+002  Oscar_Gullberg 10 - 8 P3
+
+002  Oscar_Gullberg 12 - 8 P3
+
+002  Oscar_Gullberg 12 - 8 P3
+
+002  Oscar_Gullberg 12 - 8 P3
+
+002  Oscar_Gullberg 12 - 9 P3
+
+002  Oscar_Gullberg 13 - 9 P3
+
+002  Oscar_Gullberg 14 - 9 P3
+
+002  Oscar_Gullberg 15 - 9 P3
+
+002  Oscar_Gullberg 15 - 10 P3
+
+002  Oscar_Gullberg 15 - 10 P3
+
+002  Oscar_Gullberg 16 - 10 P3
+
+002  Oscar_Gullberg 16 - 10 P3
+
+002  Oscar_Gullberg 16 - 11 P3
+
+002  Oscar_Gullberg 17 - 11 P3
+
+002  Oscar_Gullberg 17 - 12 P3
+
+002  Oscar_Gullberg 18 - 12 P3
+
+002  Oscar_Gullberg 19 - 12 P3
+
+002  Oscar_Gullberg 20 - 12 P3
+
+002  Oscar_Gullberg 20 - 12 P3
+
+002  Oscar_Gullberg 21 - 12 P3
+
+002  Oscar_Gullberg 21 - 12 P3
+
+002  Oscar_Gullberg 21 - 12 P3
+
+002  Oscar_Gullberg 21 - 12 P3
+
+002  Oscar_Gullberg 21 - 14 P3
+
+002  Oscar_Gullberg 22 - 14 P3
+
+002  Oscar_Gullberg 22 - 14 P3
+
+002  Oscar_Gullberg 22 - 15 P3
+
+002  Oscar_Gullberg 23 - 15 P3
+
+002  Oscar_Gullberg 23 - 15 P3
+
+002  Oscar_Gullberg 24 - 24 P3
+
+000  Game 5
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 1 - 1 Oscar_Gullberg
+
+002  P3 2 - 1 Oscar_Gullberg
+
+002  P3 2 - 2 Oscar_Gullberg
+
+002  P3 3 - 2 Oscar_Gullberg
+
+002  P3 3 - 3 Oscar_Gullberg
+
+002  P3 3 - 3 Oscar_Gullberg
+
+002  P3 3 - 4 Oscar_Gullberg
+
+002  P3 4 - 4 Oscar_Gullberg
+
+002  P3 4 - 5 Oscar_Gullberg
+
+002  P3 4 - 6 Oscar_Gullberg
+
+002  P3 5 - 6 Oscar_Gullberg
+
+002  P3 5 - 7 Oscar_Gullberg
+
+002  P3 5 - 7 Oscar_Gullberg
+
+002  P3 5 - 7 Oscar_Gullberg
+
+002  P3 5 - 8 Oscar_Gullberg
+
+002  P3 5 - 8 Oscar_Gullberg
+
+002  P3 5 - 9 Oscar_Gullberg
+
+002  P3 5 - 10 Oscar_Gullberg
+
+002  P3 5 - 10 Oscar_Gullberg
+
+002  P3 5 - 11 Oscar_Gullberg
+
+002  P3 5 - 11 Oscar_Gullberg
+
+002  P3 6 - 11 Oscar_Gullberg
+
+002  P3 6 - 11 Oscar_Gullberg
+
+002  P3 7 - 11 Oscar_Gullberg
+
+002  P3 7 - 11 Oscar_Gullberg
+
+002  P3 7 - 11 Oscar_Gullberg
+
+002  P3 7 - 12 Oscar_Gullberg
+
+002  P3 8 - 12 Oscar_Gullberg
+
+002  P3 8 - 13 Oscar_Gullberg
+
+002  P3 8 - 14 Oscar_Gullberg
+
+002  P3 8 - 15 Oscar_Gullberg
+
+002  P3 8 - 16 Oscar_Gullberg
+
+002  P3 8 - 16 Oscar_Gullberg
+
+002  P3 8 - 16 Oscar_Gullberg
+
+002  P3 8 - 17 Oscar_Gullberg
+
+002  P3 8 - 17 Oscar_Gullberg
+
+002  P3 8 - 18 Oscar_Gullberg
+
+002  P3 8 - 20 Oscar_Gullberg
+
+002  P3 8 - 20 Oscar_Gullberg
+
+002  P3 8 - 21 Oscar_Gullberg
+
+002  P3 11 - 21 Oscar_Gullberg
+
+002  P3 11 - 22 Oscar_Gullberg
+
+002  P3 11 - 22 Oscar_Gullberg
+
+002  P3 11 - 22 Oscar_Gullberg
+
+002  P3 11 - 23 Oscar_Gullberg
+
+002  P3 11 - 24 Oscar_Gullberg
+
+002  P3 11 - 26 Oscar_Gullberg
+
+002  P3 11 - 26 Oscar_Gullberg
+
+002  P3 11 - 28 Oscar_Gullberg
+
+002  P3 12 - 28 Oscar_Gullberg
+
+002  P3 12 - 28 Oscar_Gullberg
+
+002  P3 19 - 29 Oscar_Gullberg
+
+000  Game 6
+
+002  Oscar_Gullberg 1 - 0 P3
+
+002  Oscar_Gullberg 2 - 0 P3
+
+002  Oscar_Gullberg 2 - 1 P3
+
+002  Oscar_Gullberg 2 - 2 P3
+
+002  Oscar_Gullberg 3 - 2 P3
+
+002  Oscar_Gullberg 3 - 2 P3
+
+002  Oscar_Gullberg 4 - 2 P3
+
+002  Oscar_Gullberg 4 - 2 P3
+
+002  Oscar_Gullberg 12 - 2 P3
+
+002  Oscar_Gullberg 12 - 5 P3
+
+002  Oscar_Gullberg 13 - 5 P3
+
+002  Oscar_Gullberg 14 - 5 P3
+
+002  Oscar_Gullberg 16 - 5 P3
+
+002  Oscar_Gullberg 16 - 6 P3
+
+002  Oscar_Gullberg 17 - 6 P3
+
+002  Oscar_Gullberg 18 - 6 P3
+
+002  Oscar_Gullberg 18 - 7 P3
+
+002  Oscar_Gullberg 18 - 7 P3
+
+002  Oscar_Gullberg 18 - 11 P3
+
+002  Oscar_Gullberg 19 - 11 P3
+
+002  Oscar_Gullberg 19 - 11 P3
+
+002  Oscar_Gullberg 20 - 11 P3
+
+002  Oscar_Gullberg 20 - 11 P3
+
+002  Oscar_Gullberg 21 - 11 P3
+
+002  Oscar_Gullberg 22 - 11 P3
+
+002  Oscar_Gullberg 23 - 11 P3
+
+002  Oscar_Gullberg 23 - 12 P3
+
+002  Oscar_Gullberg 23 - 12 P3
+
+002  Oscar_Gullberg 23 - 12 P3
+
+002  Oscar_Gullberg 25 - 12 P3
+
+002  Oscar_Gullberg 25 - 12 P3
+
+002  Oscar_Gullberg 27 - 12 P3
+
+002  Oscar_Gullberg 27 - 13 P3
+
+002  Oscar_Gullberg 28 - 13 P3
+
+002  Oscar_Gullberg 28 - 14 P3
+
+002  Oscar_Gullberg 30 - 18 P3
+
+000  Game 7
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 1 - 0 Oscar_Gullberg
+
+002  P3 8 - 0 Oscar_Gullberg
+
+002  P3 8 - 1 Oscar_Gullberg
+
+002  P3 9 - 1 Oscar_Gullberg
+
+002  P3 9 - 2 Oscar_Gullberg
+
+002  P3 10 - 2 Oscar_Gullberg
+
+002  P3 10 - 3 Oscar_Gullberg
+
+002  P3 10 - 4 Oscar_Gullberg
+
+002  P3 10 - 4 Oscar_Gullberg
+
+002  P3 10 - 5 Oscar_Gullberg
+
+002  P3 10 - 9 Oscar_Gullberg
+
+002  P3 11 - 9 Oscar_Gullberg
+
+002  P3 11 - 10 Oscar_Gullberg
+
+002  P3 12 - 10 Oscar_Gullberg
+
+002  P3 12 - 10 Oscar_Gullberg
+
+002  P3 13 - 10 Oscar_Gullberg
+
+002  P3 13 - 11 Oscar_Gullberg
+
+002  P3 13 - 11 Oscar_Gullberg
+
+002  P3 13 - 11 Oscar_Gullberg
+
+002  P3 17 - 11 Oscar_Gullberg
+
+002  P3 17 - 12 Oscar_Gullberg
+
+002  P3 17 - 13 Oscar_Gullberg
+
+002  P3 17 - 14 Oscar_Gullberg
+
+002  P3 19 - 14 Oscar_Gullberg
+
+002  P3 19 - 15 Oscar_Gullberg
+
+002  P3 23 - 15 Oscar_Gullberg
+
+002  P3 23 - 16 Oscar_Gullberg
+
+002  P3 23 - 17 Oscar_Gullberg
+
+002  P3 23 - 18 Oscar_Gullberg
+
+002  P3 23 - 18 Oscar_Gullberg
+
+002  P3 27 - 18 Oscar_Gullberg
+
+002  P3 29 - 19 Oscar_Gullberg
+
+000  Game 8
+
+002  Oscar_Gullberg 1 - 0 P3
+
+002  Oscar_Gullberg 2 - 0 P3
+
+002  Oscar_Gullberg 2 - 1 P3
+
+002  Oscar_Gullberg 2 - 2 P3
+
+002  Oscar_Gullberg 2 - 3 P3
+
+002  Oscar_Gullberg 3 - 3 P3
+
+002  Oscar_Gullberg 3 - 4 P3
+
+002  Oscar_Gullberg 3 - 4 P3
+
+002  Oscar_Gullberg 3 - 5 P3
+
+002  Oscar_Gullberg 4 - 5 P3
+
+002  Oscar_Gullberg 5 - 5 P3
+
+002  Oscar_Gullberg 5 - 6 P3
+
+002  Oscar_Gullberg 6 - 6 P3
+
+002  Oscar_Gullberg 6 - 6 P3
+
+002  Oscar_Gullberg 6 - 7 P3
+
+002  Oscar_Gullberg 7 - 7 P3
+
+002  Oscar_Gullberg 7 - 8 P3
+
+002  Oscar_Gullberg 7 - 8 P3
+
+002  Oscar_Gullberg 8 - 8 P3
+
+002  Oscar_Gullberg 8 - 8 P3
+
+002  Oscar_Gullberg 8 - 9 P3
+
+002  Oscar_Gullberg 9 - 9 P3
+
+002  Oscar_Gullberg 9 - 10 P3
+
+002  Oscar_Gullberg 10 - 10 P3
+
+002  Oscar_Gullberg 11 - 10 P3
+
+002  Oscar_Gullberg 12 - 10 P3
+
+002  Oscar_Gullberg 13 - 10 P3
+
+002  Oscar_Gullberg 13 - 10 P3
+
+002  Oscar_Gullberg 13 - 10 P3
+
+002  Oscar_Gullberg 13 - 11 P3
+
+002  Oscar_Gullberg 14 - 11 P3
+
+002  Oscar_Gullberg 14 - 11 P3
+
+002  Oscar_Gullberg 14 - 11 P3
+
+002  Oscar_Gullberg 15 - 11 P3
+
+002  Oscar_Gullberg 16 - 11 P3
+
+002  Oscar_Gullberg 16 - 11 P3
+
+002  Oscar_Gullberg 16 - 11 P3
+
+002  Oscar_Gullberg 17 - 11 P3
+
+002  Oscar_Gullberg 17 - 12 P3
+
+002  Oscar_Gullberg 17 - 12 P3
+
+002  Oscar_Gullberg 17 - 13 P3
+
+002  Oscar_Gullberg 17 - 13 P3
+
+002  Oscar_Gullberg 17 - 13 P3
+
+002  Oscar_Gullberg 19 - 13 P3
+
+002  Oscar_Gullberg 19 - 14 P3
+
+002  Oscar_Gullberg 19 - 14 P3
+
+002  Oscar_Gullberg 19 - 15 P3
+
+002  Oscar_Gullberg 19 - 15 P3
+
+002  Oscar_Gullberg 19 - 23 P3
+
+002  Oscar_Gullberg 20 - 23 P3
+
+002  Oscar_Gullberg 21 - 23 P3
+
+002  Oscar_Gullberg 21 - 23 P3
+
+002  Oscar_Gullberg 23 - 25 P3
+
+000  Game 9
+
+002  P3 0 - 0 Oscar_Gullberg
+
+002  P3 0 - 1 Oscar_Gullberg
+
+002  P3 0 - 1 Oscar_Gullberg
+
+002  P3 1 - 1 Oscar_Gullberg
+
+002  P3 1 - 1 Oscar_Gullberg
+
+002  P3 2 - 1 Oscar_Gullberg
+
+002  P3 2 - 2 Oscar_Gullberg
+
+002  P3 3 - 2 Oscar_Gullberg
+
+002  P3 3 - 3 Oscar_Gullberg
+
+002  P3 4 - 3 Oscar_Gullberg
+
+002  P3 4 - 4 Oscar_Gullberg
+
+002  P3 4 - 5 Oscar_Gullberg
+
+002  P3 4 - 5 Oscar_Gullberg
+
+002  P3 4 - 6 Oscar_Gullberg
+
+002  P3 5 - 6 Oscar_Gullberg
+
+002  P3 5 - 7 Oscar_Gullberg
+
+002  P3 6 - 7 Oscar_Gullberg
+
+002  P3 6 - 7 Oscar_Gullberg
+
+002  P3 10 - 7 Oscar_Gullberg
+
+002  P3 10 - 8 Oscar_Gullberg
+
+002  P3 10 - 9 Oscar_Gullberg
+
+002  P3 11 - 9 Oscar_Gullberg
+
+002  P3 11 - 10 Oscar_Gullberg
+
+002  P3 11 - 10 Oscar_Gullberg
+
+002  P3 11 - 11 Oscar_Gullberg
+
+002  P3 11 - 11 Oscar_Gullberg
+
+002  P3 11 - 11 Oscar_Gullberg
+
+002  P3 11 - 11 Oscar_Gullberg
+
+002  P3 12 - 11 Oscar_Gullberg
+
+002  P3 12 - 12 Oscar_Gullberg
+
+002  P3 12 - 13 Oscar_Gullberg
+
+002  P3 12 - 16 Oscar_Gullberg
+
+002  P3 12 - 16 Oscar_Gullberg
+
+002  P3 12 - 20 Oscar_Gullberg
+
+002  P3 15 - 33 Oscar_Gullberg
+
+Oscar_Gullberg won 6 games. P3 won 3 games. There were 1 draws.
+
