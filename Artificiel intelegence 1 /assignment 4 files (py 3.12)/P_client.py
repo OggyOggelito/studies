@@ -16,131 +16,131 @@ def decide_move(boardIn, playerTurnIn):
     # PLAYERMOVE IS '1'..'6'
     # BOARDIN CONSISTS OF 14 INTS. BOARDIN[0-5] ARE P1 HOLES, BOARDIN[6] IS P1 STORE
     # BOARDIN[7-12] ARE P2 HOLES, BOARDIN[13] IS P2 STORE
+    
+    # utility function to evaluate board state
     def get_board(board, player):
-        player_store = board[6] if player == 1 else board[13]  # players store index
-        opp_store = board[13] if player == 1 else board[6]  # opponents store index
-        player_pits = sum(board[0:6]) if player == 1 else sum(board[7:13])  # stones on players side
-        opp_pits = sum(board[7:13]) if player == 1 else sum(board[0:6])  # stones on opponents side
-        
-        score = player_store - opp_store
-        score += 0.2 * (player_pits - opp_pits) # weight calculated
-        if playerTurnIn == 1: # bonus added 
-            score += 0.1
-        else:
-            score -= 0.1
-            
-        if sum(board[0:6]) == 0 or sum(board[7:13]) == 0:
-            score += (board[6] if player == 1 else board[13]) * 2
-        
+        # Get own and opponent store
+        player_store = board[6] if player == 1 else board[13]
+        opponent_store = board[13] if player == 1 else board[6]
+
+        # get pits for both players
+        player_pits = board[0:6] if player == 1 else board[7:13]
+        opponent_pits = board[7:13] if player == 1 else board[0:6]
+
+        score = 0
+        # main point diff counts most
+        score += 3.5 * (player_store - opponent_store)
+
+        # more stones on your side = benefit
+        score += 0.5 * (sum(player_pits) - sum(opponent_pits))
+
+        # bonus if a move gives us another turn
         for i in range(6):
             if player == 1 and board[i] == 6 - i:
-                score += 10 # round to win the game 
+                score += 2
             elif player == 2 and board[7 + i] == 6 - i:
-                score += 10 # round to win the game
+                score += 2
+
+        # reward possible captures
         for i in range(6):
             idx = i if player == 1 else 7 + i
             if board[idx] == 1:
                 opp_idx = 12 - idx
-                score += board[opp_idx] + 2
-        
-        # final utility
-        return score, player_store, opp_store, player_pits, opp_pits
-        
-    def valid_moves(board, player):
-        offset = 0 if player == 1 else 7  # player 1 pits: 0–5, Player 2 pits: 7–12
-        return [i + 1 for i in range(6) if board[offset + i] > 0] 
+                if board[opp_idx] > 0:
+                    score += 2 * board[opp_idx]
 
-    # minimax algorithm with depth-limited search to select the best move.
-    # It alternates between maximizing and minimizing players.
+        # punish opponent can make a big capture
+        for i in range(6):
+            if player == 1 and board[i] == 1 and board[12 - i] >= 3:
+                score -= board[12 - i] * 0.7
+            elif player == 2 and board[7 + i] == 1 and board[5 - i] >= 3:
+                score -= board[5 - i] * 0.7
+
+        # endgame bonus or penalty if the game is close to finishing
+        if sum(board[0:6]) + sum(board[7:13]) <= 15:
+            if player_store > opponent_store:
+                score += 100
+            elif player_store < opponent_store:
+                score -= 100
+
+        return score
+
+    # Returns valid moves for current player
+    def valid_moves(board, player):
+        offset = 0 if player == 1 else 7
+        return [i + 1 for i in range(6) if board[offset + i] > 0]
+
+    # simulates a move and returns new board and whose turn it is
+    def play(playerTurn, playerMove, boardGame):
+        if not correctPlay(playerMove, boardGame, playerTurn):
+            return None
+
+        idx = playerMove - 1 + (playerTurn - 1) * 7
+        numStones = boardGame[idx]
+        boardGame[idx] = 0
+
+        # distribute stones one-by-one
+        while numStones > 0:
+            idx = (idx + 1) % 14
+            if idx == 13 - 7 * (playerTurn - 1):  # skip opponent's store
+                continue
+            boardGame[idx] += 1
+            numStones -= 1
+
+        # check if player gets another turn
+        nextTurn = playerTurn if idx == 6 + 7 * (playerTurn - 1) else 3 - playerTurn
+
+        # If last stone lands in empty pit on own side = capture
+        if boardGame[idx] == 1 and idx in range((playerTurn - 1) * 7, 6 + (playerTurn - 1) * 7):
+            boardGame[6 + (playerTurn - 1) * 7] += 1 + boardGame[12 - idx]
+            boardGame[idx] = 0
+            boardGame[12 - idx] = 0
+
+        return boardGame, nextTurn
+
+    # Minimax recursive function
     def minimax(board, player, depth, maxing):
         if depth == 0:
-            return get_board(board, player), None  # evaluate board at leaf node
-
-        current_player = player if maxing else 3 - player  # decide whose turn it is in the simulation
-
-        # defensive check to abort if invalid state
-        if current_player not in [1, 2] or len(board) != 14:
             return get_board(board, player), None
 
-        possible_moves = valid_moves(board, current_player)  # get list of legal moves
-
+        current_player = player if maxing else 3 - player
+        moves = valid_moves(board, current_player)
         best_value = float('-inf') if maxing else float('inf')
         best_move = None
 
-        for move in possible_moves:
-            if not isinstance(move, int) or not (1 <= move <= 6):
-                continue  # skip illegal or corrupt move values
-
-            board_copy = board.copy()
-            result = play(current_player, move, board_copy)  # simulate the move
-
-            # skip move if simulation fails
-            if result is None or not isinstance(result, tuple) or len(result) != 2:
+        for move in moves:
+            board_copy = board[:]
+            result = play(current_player, move, board_copy.copy())
+            if result is None:
                 continue
-
             new_board, next_turn = result
-            
-            # ensure valid state after move
-            if len(new_board) != 14 or next_turn not in [1, 2]:
-                continue
-
-            # determine if the same player continues
             next_maxing = maxing if next_turn == current_player else not maxing
-            value, _ = minimax(new_board, depth - 1, player, next_maxing)
-            
-            # penalty bot for good set-up
+
+            value, _ = minimax(new_board, player, depth - 1, next_maxing)
+
+            # Small penalty if opponent gets another turn
             if next_turn != current_player:
-                # Assume opponent will play perfectly
-                if current_player == 1 and new_board[7:13].count(1) > 0:
-                    value = value - 3 if value is not None else -3
-                elif current_player == 2 and new_board[0:6].count(1) > 0:
-                    value = value - 3 if value is not None else -3
-            
-            # update best value and best move based on maxing/minimizing
+                value -= 3
+
             if maxing and value > best_value:
                 best_value = value
                 best_move = move
             elif not maxing and value < best_value:
                 best_value = value
                 best_move = move
-            elif maxing < best_value:
-                best_value = value
-                best_move = move
-            elif not maxing > best_value:
-                best_value = value
-                best_move = move
-            
-        return best_value, best_move    
-    # use Minimax to find the best move, searching 3 roots deep
+
+        return best_value, best_move
+
+    # Try to find the best move with minimax
     _, best_move = minimax(boardIn.copy(), playerTurnIn, 3, True)
 
-    # fallback if no move found, should happen if pits are empty
+    # If no move found, pick first valid move
     if best_move is None:
-        moves = valid_moves(boardIn, playerTurnIn)
-        best_move = moves[0] if moves else 1  # default first legal move
+        valid = valid_moves(boardIn, playerTurnIn)
+        best_move = valid[0] if valid else 1
 
+    # Return move as a string and method used
     return str(best_move), "minimax"
-    """moves = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6']
-    if playerTurnIn == 1:
-        options = np.array(boardIn[0:6])
-        options = np.where(options > 0)
-        options = options[0]
-        position = options[np.random.randint(len(options), size=1)]
-        playerMove = moves[position[0]]
-    elif playerTurnIn == 2:
-        options = np.array(boardIn[7:13])
-        options = np.where(options > 0)
-        options = options[0]
-        position = options[np.random.randint(len(options), size=1)]
-        playerMove = moves[position[0]]
-    return playerMove, "randommove"""
-
 
 
 def play(playerTurn: int, playerMove: int, boardGame):  
